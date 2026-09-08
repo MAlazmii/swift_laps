@@ -22,7 +22,7 @@ The complete app archives were recovered into `examples/`, including storyboards
 
 ## Status and learning notes
 
-These are preserved coursework exercises. They have not been modernised into production apps. In particular, Timetables assumes numeric input and can fail for invalid or very large values; Dice Roll samples 2–12 uniformly rather than modelling the sum of two independent dice. Original tests are largely generated scaffolding.
+These are preserved coursework exercises. They have not been modernised into production apps. Timetables validates whole-number input and rejects values that would overflow multiplication by 30, with regression checks at both numeric limits. Dice Roll retains its original uniform 2–12 sampling rather than modelling the sum of two independent dice. Original Xcode tests are largely generated scaffolding.
 
 Project references, property lists, asset JSON and XML resources were validated after extraction. iOS builds and simulator tests have not been run successfully: the validation machine has only Command Line Tools, and its Swift compiler reports a duplicate `SwiftBridging` module. Full Xcode is required to verify app behaviour.
 
@@ -33,3 +33,5 @@ Original authorship and teaching-source headers are preserved, including Mohamme
 ## Automated checks
 
 Run `python3 scripts/validate_resources.py` for portable resource checks. GitHub Actions runs this check and attempts unsigned iOS Simulator builds on macOS. These workflows have not yet been run remotely; successful local resource checks do not establish that an iOS build passes.
+
+Focused Swift regression checks run with `python3 scripts/test_logic.py` on macOS and in a separate GitHub Actions job. They test the shared logic used by the app, without requiring an iOS simulator.

@@ -16,6 +16,7 @@
 		45EDBA9B29523877009B9CF7 /* timetablesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EDBA9A29523877009B9CF7 /* timetablesTests.swift */; };
 		45EDBAA529523877009B9CF7 /* timetablesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EDBAA429523877009B9CF7 /* timetablesUITests.swift */; };
 		45EDBAA729523877009B9CF7 /* timetablesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EDBAA629523877009B9CF7 /* timetablesUITestsLaunchTests.swift */; };
+		A20000000000000000000001 /* TableInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000002 /* TableInput.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		45EDBAA029523877009B9CF7 /* timetablesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = timetablesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		45EDBAA429523877009B9CF7 /* timetablesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = timetablesUITests.swift; sourceTree = "<group>"; };
 		45EDBAA629523877009B9CF7 /* timetablesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = timetablesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A20000000000000000000002 /* TableInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableInput.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		45EDBA8229523876009B9CF7 /* timetables */ = {
 			isa = PBXGroup;
 			children = (
+				A20000000000000000000002 /* TableInput.swift */,
 				45EDBA8329523876009B9CF7 /* AppDelegate.swift */,
 				45EDBA8529523876009B9CF7 /* SceneDelegate.swift */,
 				45EDBA8729523876009B9CF7 /* ViewController.swift */,
@@ -258,6 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A20000000000000000000001 /* TableInput.swift in Sources */,
 				45EDBA8829523876009B9CF7 /* ViewController.swift in Sources */,
 				45EDBA8429523876009B9CF7 /* AppDelegate.swift in Sources */,
 				45EDBA8629523876009B9CF7 /* SceneDelegate.swift in Sources */,
